@@ -5,6 +5,7 @@ import streamlit as st
 
 
 import pickle 
+st.write(input_data_model)
 
 st.header("Car Prediction ML model")
 
@@ -48,8 +49,10 @@ if st.button("Predict") :
   
 
 
-    st.write(input_data_model)
+
     car_price = model.predict(input_data_model)
 
     st.markdown('Car Price going to be ' + str(car_price[0])+' Lakh')
+    st.write(input_data_model)
+
 
