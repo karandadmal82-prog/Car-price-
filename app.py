@@ -50,10 +50,11 @@ if st.button("Predict") :
 
 
 
-    car_price = model.predict(input_data_model)
+   
 
     st.markdown('Car Price going to be ' + str(car_price[0])+' Lakh')
     
+
 
 
 
