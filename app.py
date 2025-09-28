@@ -47,11 +47,11 @@ if st.button("Predict") :
                   ,inplace=True)
   
 
-st.write(input_data_model)
-car_price = model.predict(input_data_model)
 
+car_price = model.predict(input_data_model)
 st.markdown('Car Price going to be')+ str(car_price[0])
     
+st.write(input_data_model)
 
 
 
